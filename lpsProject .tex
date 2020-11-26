@@ -5,6 +5,7 @@
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
+\usepackage{multirow} % for tables
 \usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 \graphicspath{{./img/}}
@@ -64,6 +65,118 @@
 %	1.1. Estudio del mercado y de factibilidad
 %----------------------------------------------------------------------------------------
 \section{Estudio del mercado y de factibilidad}
+
+\subsection{Análisis de problema y las oportunidades}
+
+Con la revolución 4.0 muchas compañías han optado por generar nuevos servicios tecnológicos para brindar mejor servicio a sus clientes y dar un servicio más personalizado a las necesidades de los clientes. Existen muchas compañías como pymes o microempresa que no poseen el recurso para acceder al desarrollo de estos servicios tecnológicos y que les permitan mantenerse competitivos en este mercado cambiante de tecnología. Dentro de estas compañías se encuentran los talleres de automóviles que poseen mucha variedad por servicios y por tamaño es por esta razón que se tiene una oportunidad para crear un LP que cubra la necesidad de cada tipo de taller o servicios que ofrezcan.
+
+\subsection{Entender hacia dónde se quiere ir}
+
+El mercado de ventas de vehículos en un mercado que se mantiene en crecimiento después de una caída por la cuarentena ocurrida por el COVID esto genera en cierto modo que se vea afectado positivamente el mercado de servicios de taller puesto que al tener más parque automotor en circulación eso genera un crecimiento en las compañías de talleres de vehículos ya sean las compañías existentes que adapten nuevos servicios a ofrecer o que se creen nuevos talleres para cubrir la demanda. Por esta razón se hace necesario herramientas de software para estos talleres que se adapten al portafolio de servicios que ofrecen y rápidamente por que es un cliente de un taller debe ser atendido en mayor brevedad posible. Por este motivo se propone utilizar un paradigma de desarrollo de software basado en líneas de productos LP que permita adaptarse a las necesidades de cada tipo de taller.
+
+\subsection{Determinar el segmento del mercado}
+
+Para segmentar el mercado utilizaremos las variables geográficas, demográficas, legales y socioeconómicas. Para las variables geográficas y legales porque existe leyes y reglamentaciones a la cual se debe regir estos tipos de negocios en cada país y más específicos para esta LP al país Colombia donde existen entidades regulatorias que protegen al consumidor como por ejemplo Superintendencia de industria y comercial y los talleres deben regirse con esta normativa para no incurrir en sanciones.
+Por otro lado, la variable demográfica por que se busca brincar herramienta para gestionar talleres, pero se enfocará en los propietarios de talleres menores a 40 años ya que es posible que se adopten más fácil nuevas tecnologías que beneficien sus negocios.
+Y finalmente la variable socioeconómica por que estará enfocado en negocios micro y pymes para brincar una herramienta que les permita ser más competitivos.
+
+
+\subsubsection{Requisitos funcionales}
+
+\begin{enumerate}
+\item El sistema debe permitir a los clientes registrarse utilizando Facebook o Google.
+\item El sistema debe tener un sistema de autenticación a los usuarios del taller.
+\item El sistema tendrá un catálogo de servicios que podrá ofrecer por parte del taller.
+\item El sistema tendrá gestión de los horarios disponibles por servicios.
+\item El sistema permitirá buscar por palabras claves, precios y disponibilidad al cliente servicios que ofrecen el taller.
+\item El sistema permite al cliente pagar por algunos servicios vía electrónica: tarjeta de crédito o tarjeta débito.
+\item El sistema de pago debe utilizar pasarela de pago como PayU en Colombia.
+\item El sistema debe permitir al cliente cancelar la reserva.
+\item El sistema debe permitir recuperar al usuario.
+\item El sistema debe tener un componente de historia de servicios solicitados.
+\item El sistema debe permitir generar facturación electrónica a los clientes
+\end{enumerate}
+
+
+\subsubsection{Requisitos no funcionales}
+
+\begin{enumerate}
+\item  El sistema debe ser responsivo y adaptarse a Computadores, Tablet o Móviles
+\item  El sistema debe aplicar la reglamentación colombiana para este tipo de servicios
+\item La información financiera de los clientes debe manejarse de forma segura
+\item  La información de los clientes debe respectar las leyes de habeas data
+\item   El sistema debe ser de fácil mantenibilidad
+\item El sistema debe tener disponibilidad
+\item El sistema debe ser pensando en usabilidad
+\item El sistema debe dar respuesta a cualquier petición con un tiempo menor a 10 seg
+\end{enumerate}
+
+\subsection{Identificar las posibles soluciones y sus alcances}
+ 
+¿Qué productos tendrá la LP?\\
+Sistemas de tienda de servicios online para talleres del sector automotriz por ejemplo 1) Taller que ofrece mecánica y lavado, 2) Taller que ofrece mecánica, lavado y pintura y 3) Taller que ofrece mecánica, lavado, pintura y Audio.\\\\
+ ¿Cuál es su mercado?\\
+Talleres de automóviles de Valle del Cauca – Colombia.\\\\
+¿Cuándo serán lanzados?\\
+Una vez terminado análisis, diseño e implementación de la LP y con sus pruebas correspondientes\\
+¿Cuál será el subdominio de la LP?\\
+El dominio serán comercio electrónico y el subdominio comercio electrónico de servicios de talleres de automóviles.\\\\
+¿Qué ventajas y desventajas ofrece este subdominio?\\
+El comercio electrónico en Colombia ha tenido un crecimiento ya que existe una sociedad más digital y dispuesta a comprar online en el año 2019 tuvo un crecimiento de 27\% con respecto al 2018 y colocando a Colombia en el cuarto mercado de la región moviendo 7.6 mil millones USD y con la posibilidad para el 2021 ocupar el tercer puesto en mercado electrónico desplazando Argentina. Por otro lado, el mercado de ventas de vehículos está retomando participación después de abril del 2020 por la cuarentena y con un crecimiento eso generará más parque automotor y más demanda de servicios para los talleres automotrices.\\\\
+¿Qué características tendrá la LP?\\
+En cuanto a requisitos funcionales un comercio electrónico se basa en la información que se presenta y que sea fácil consultar por otro lado está LP debido a que es un comercio electrónico enfocado en oferta y demanda de servicios de talleres de automóviles debe permitir consultar atributos como precio, disponibilidad, productos entre otros, permitiéndole a los registrar usuarios tanto internos como externos. Igualmente debe permitir a los clientes reservar alguno de los servicios ofrecidos por el taller   y como una facilidad para el cliente y el taller que se puede pagar por el servicio con anterioridad por medio electrónico o pagar en el taller.\\
+En cuanto a los requisitos no funcionales debe ser portable ósea funcionar el cualquier dispositivos tabletas, móviles y pc. También se debe tener alta disponibilidad ya que este mercado requiere atención muy rápida al cliente debido a que normalmente cuando un cliente requiere un servicio de taller es por que lo necesita de manera urgente y que el sitio no esté disponible puede ocasionar que pierda un cliente.\\
+Por último, como da la posibilidad de pagar por medio electrónico se debe ofrecer todos los estándares de seguridad que protejan a los clientes y al taller de fraudes electrónicos.\\\\
+ 
+¿Qué tipos de productos tendrá la LP y que variaciones?\\
+Los productos de la línea sería de tipo software y las variaciones que tendrá depende del taller y los servicios que ofrecen cada uno de ellos por ejemplo alguno taller tendrán el módulo de gestión de lavado de vehículo, módulo de gestión de mecánica, módulo de gestión pintura, módulo de gestión de audio, módulo para gestión de horarios y módulo para gestión de lista de precios y con la posibilidad que tenga todos o alguno de estos módulos.\\\\
+¿Cuáles son las oportunidades y riesgo que presentan las variaciones de la LP?\\
+Una oportunidad es atraer nuevos clientes que necesitan alguno de los servicios que ofrece cada módulo, otra oportunidad es fidelizar a los clientes del taller al ofrecer un mejor servicio y de fácil acceso. Para el módulo de pagos online tendrá una oportunidad de generar mayor satisfacción de los clientes por que ahorra tiempo en realizar el servicio un riesgo problemas en los pagos de los clientes. Un riesgo podría ocurrir por tener que pedir a los clientes de los talleres registrarse eso puede generar que no ingresen y se pierda un posible prospecto o cliente. Y finalmente una gran oportunidad es poder difundir de manera masiva los servicios del taller y permitir a los clientes tener un contacto más personalizado con el taller.\\\\
+¿Cuáles componentes reutilizables se incluirán en la LP?\\
+Dado que este comercio electrónico ofrece servicios de un taller de automóviles es necesario que existe por lo menos un módulo del servicio que se ofrecen:  mecánica, pintura, lavado y Audio y el módulo de administración del sistema ya con esta restricción se podría consultar los servicios que ofrece el taller, pero aun no se podría pagar en línea o conocer precios de estos y finalmente el módulo de horario para manejar el tiempo de disponibilidad del taller para reservar del cliente.\\\\
+¿Cuáles de ellos puedo realmente implementar con los recursos disponibles y el estado actual de la empresa?\\
+Para el ejercicio se asume que se tiene todos los recursos disponibles para cumplir la implementación.\\\\
+¿con qué clase de elementos reutilizables cuento actualmente (componentes o documentación existentes)?\\
+Debido a que es una oportunidad para un nuevo proyecto no cuentan actualmente con ningún componente o documentación para reutilizar.\\ \cite{url1} \cite{url2}
+
+
+\subsection{Evaluación}
+
+\textbf{Identificación de riesgos}\\
+En la Tabla~\ref{table:t7}, se presenta un matriz de riesgos para una implementación de una LP para un comercio electrónico para ofrecer servicios de talleres de automóviles según su probabilidad de ocurrencia, impacto de riesgo y las acciones que lo disminuyen.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{3cm}|p{4cm}|p{2cm}|p{2cm}|p{4cm}|} \hline
+Alternativa & Riesgo & Ocurrencia & Impacto & Acciones atenuante \\ \hline
+\multirow{4}{3cm}{Implementación de una línea de productos en comercio electrónico para servicios talleres de automóviles} & Que los módulo reutilizables no se puedan acoplar de manera correcta
+ & Baja & Alto & Se deben hacer un plan de pruebas para cada módulo
+\\
+\cline{2-5} & Que la implementación de cada uno de los componentes no se pueda realizar en el tiempo previsto & Media & Alto & Se debe hacer una implementación iterativa\\ 
+\cline{2-5} & Que el cliente no queda satisfecho con el software solicitado
+ & Media & Alto & Se debe realizar una buena educción de requisitos\\ 
+\cline{2-5} & Que existan funcionalidades que no sean necesarias o que falten funcionalidades necesarias para cumplir el servicio del cliente & Media & Alto & Se debe realizar una buena educción de requisitos\\ \hline
+\end{tabular}
+\caption{Matriz de riesgos}
+\label{table:t7}
+\end{table}
+
+
+Finalmente se detallan todos los problemas que pueden ocurrir en la etapa de implementación para una línea de producto en comercios electrónicos para servicios de taller de automóviles en la Tabla~\ref{table:t8}:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|p{2cm}|p{4cm}|} \hline
+Alternativa & Descripción del problema & Prioridad del problema & Acciones para su resolución \\ \hline
+\multirow{2}{3cm}{Implementación de una línea de productos en comercio electrónico para servicios talleres de automóviles} & Necesita autorización de generación & 3 & Presentar beneficios en tiempo y costos a largo plazo de implementar un LP \\
+\cline{2-4} & Falta de conocimiento en implementar un LP & 4 & Se hace necesario contratar un líder de proyecto que conozca de implementación de LP\\ 
+\cline{2-4} & Se requiere mayor nivel de inversión para iniciar una LP & 2 & Plantear costos y gastos necesarios para implementar LP vs Beneficios obtenidos a largo plaz\\  \hline
+\end{tabular}
+\caption{Posibles problemas}
+\label{table:t8}
+\end{table}
+
+
 %----------------------------------------------------------------------------------------
 %	1.2. Análisis de inversiones costos y rentabilidad
 %----------------------------------------------------------------------------------------
@@ -177,7 +290,7 @@ Ahora calcularemos nuestro ROI punto de equilibro para estimar cuantos productos
 
 La Figura~\ref{fig:grf1} muestra los datos obtenido en la Tabla~\ref{table:t3} que compara los costos para desarrollar n productos de nivel operativo bajo enfoque tradicional versus LPS
 
-\vspace{9cm}
+\vspace{18cm}
 
 \begin{figure}[h]
 	\centering
@@ -198,7 +311,7 @@ En conclusión, podemos ver que la rentabilidad de la línea de productos nos of
 \centering
 \begin{tabular}{|c|p{8cm}|p{4cm}|} \hline
  Nombre & Habilildades  & Área de Conocimiento \\[0.5ex] \hline
- Oscar & PHP, Angular   & Automotriz, Financiero \\[0.5ex] \hline
+ Oscar & PHP, Angular, JavaScript, Postgres, Kotlin   & Automotriz, Financiero \\[0.5ex] \hline
  William & Java, Angular, Python, JavaScript ,Spring MVC, BOOT, SECURITY, JSP, HTML, CSS, BOOTSTRAP, Thymeleaf, Hibernatem, SQL, WebService REST, SOAP   & Financiero, Bancario \\[0.5ex] \hline
  Dario & Java/Groovy, Angular   & Expedición Documentos Civiles, Domicilios \\[0.5ex] \hline
 \end{tabular}
@@ -206,7 +319,7 @@ En conclusión, podemos ver que la rentabilidad de la línea de productos nos of
 \label{table:t4}
 \end{table}
 
-\vspace{9cm}
+\vspace{4cm}
 %----------------------------------------------------------------------------------------
 %	1.4. Definición del catálogo del producto
 %----------------------------------------------------------------------------------------
@@ -327,13 +440,40 @@ Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5
 %----------------------------------------------------------------------------------------
 \section{Evolución}
 
+Para la implementación de la LP se van a tener en cuenta los siguientes ambientes como se miestra en la Figura~\ref{fig:img1}, para soportar la evolución de la LPS y adaptarnos a cualquier cambio y funcionalidades nuevas que se deseen implementar:\\
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{img1}
+	\caption{Diagrama ambientes de trabajo}
+	\label{fig:img1}
+\end{figure}
 
-
-
+\begin{itemize}
+	\item Producción: Tendrá la última versión estable de la LP y con las funcionalidades estables
+	\item BugFix: Ambiente de donde se corrigen errores es muy cercano a producción para problemas que deben ser solucionados en corto tiempo.
+	\item QA: Ambiente para los criterios de aceptación de desarrollos nuevos 
+	\item Desarrollo: Ambiente para la integración de los desarrollos nuevos por cada programador
+Para la implementación se manejar las siguientes tecnologías debido a que son muy estables además se cuenta con experiencia en el grupo implementador del LP y adicionalmente se estima que nos dará una estabilidad para 2 a 3 años para requerir una actualización necesaria:
+	\begin{itemize}
+		\item Postgres para base de datos
+		\item HTML, JavaScript, JQuery, JSP, para el Frontend de la LP
+		\item Framework PHP Laravel, Spring, para el Backend de la LP	
+		\item Para el versionamiento se utilizará GIT
+	\end{itemize}
+	\item Las ramas para el versionamiento con git se proponen 4 ramas que serían:
+	\begin{itemize}
+		\item Master: Rama principal para desplegar el desarrollo estable y en producción
+		\item Desarrollo: Rama para integración de nuevos desarrollos
+		\item Release: Rama para tener nuevas funcionalidades y pruebas que no afecte producción	
+		\item Bugfix: Rama sacada de Máster para corregir errores en producción
+	\end{itemize}
+\end{itemize}
 
 \medskip
 \bibliographystyle{abbrv}
 \bibliography{libreria}
+
+
 
 \end{document}
