@@ -329,24 +329,9 @@ En conclusión, podemos ver que la rentabilidad de la línea de productos nos of
 \begin{table}[htbp]
 \centering
 \begin{tabular}{|p{5cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-	& \textbf{Básico}  
-	\begin{itemize}
-		\item Mecánica
-		\item Lavado
-	\end{itemize} 
-	& \textbf{Profesional} 
-	\begin{itemize}
-		\item Mecánica
-		\item Lavado
-		\item Pintura
-	\end{itemize} 
-	& \textbf{Experto}
-	\begin{itemize}
-		\item Mecánica
-		\item Lavado
-		\item Pintura
-		\item Audio
-	\end{itemize}  \\[0.5ex] \hline
+	& \textbf{Básico:} Gestión de servicios por BD  
+	& \textbf{Profesional:} Gestión de servicios por Frontend(carga excel)  
+	& \textbf{Experto:} Personalización de servicios por Frontend(formulario \\[0.5ex] \hline
 Ingreso Anual$<$ \$1.131.000.000	                & TallerVirtual1  &  &  \\[0.5ex] \hline
 \$1.131.000.000$<$ Ingreso Anual$<$ \$4.523.000.000	&   & TallerVirtual2 &  \\[0.5ex] \hline
 Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5ex] \hline
@@ -355,35 +340,6 @@ Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5
 \caption{Tabla de Segmentos 1}
 \label{table:t5}
 \end{table}
-
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|p{5cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-	& \textbf{Básico}  
-	\begin{itemize}
-		\item Reserva
-	\end{itemize} 
-	& \textbf{Profesional} 
-	\begin{itemize}
-		\item Reserva
-		\item Selección de servicios
-	\end{itemize} 
-	& \textbf{Experto}
-	\begin{itemize}
-		\item Reserva
-		\item Selección de servicios
-		\item Selección de mecánico
-	\end{itemize}  \\[0.5ex] \hline
-Ingreso Anual$<$ \$1.131.000.000	                & TallerVirtual1  &  &  \\[0.5ex] \hline
-\$1.131.000.000$<$ Ingreso Anual$<$ \$4.523.000.000	&   & TallerVirtual2 &  \\[0.5ex] \hline
-Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5ex] \hline
-
-\end{tabular}
-\caption{Tabla de funcionalidades}
-\label{table:t6}
-\end{table}
-
 
 ¿Quiénes son los principales actores de la industria?
 \begin{itemize}
@@ -400,12 +356,12 @@ Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5
 
 ¿Vale la pena la inversión en este segmento?
 \begin{itemize}
-	\item Permite generar una estructuración personalizada de los servicios ofrecidos para cada taller
+	\item Permite generar una estructuración personalizada de los servicios ofrecidos para cada taller. Ofreciendo una solución en un mercado que ha demostrado crecimiento en los últimos meses pos-cuarentena.
 \end{itemize}
 
 ¿Hemos descubierto un nuevo nicho de mercado?
 \begin{itemize}
-	\item No, pero se permitiría la flexibilidad de incorporar o eliminar servicios ofrecidos por el taller
+	\item No, pero hemos descubierto que es posible el desarrollo de productos que puedan capturar la atención de diferentes clientes, agregando o eliminando componentes según su necesidad.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -416,24 +372,129 @@ Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5
 \begin{enumerate}
 	\item TallerVirtual1:
 	\begin{itemize}
+		\item Inicio de sesión (usuario/ password)
+		\item Carga de servicios por BD
+		\item Lista de servicios (nombre, descripción, precio y horarios estáticos)
 		\item Reserva de atención (sin pago)
-		\item Lista de servicios (no se pueden seleccionar, se agregan por BD)
 	\end{itemize}
 	\item TallerVirtual2:
 	\begin{itemize}
-		\item Reserva de atención (con pago dependiendo de los servicios seleccionados)
-		\item Lista de servicios (se pueden seleccionar, ingresados por excel)
+		\item Inicio de sesión (usuario/password, login Google)
+		\item Administración de servicios por Frotend(Excel)
+		\item Administración de horarios por día a la semana por frontend(Excel)
+		\item Lista de servicios (nombre, descripción, imagen, precio y horarios)
+		\item Reserva de atención (con pago solo Tarjeta de Crédito)
+		\item Cancelación de reservación (No permite anular reserva, sino, modificar horario)
+		\item Se visualiza histórico de servicios solicitados por cliente.
 	\end{itemize}
 	\item TallerVirtual3:
 	\begin{itemize}
-		\item Reserva de atención (con pago, dependiendo de los servicios seleccionados y mecánico)
-		\item Lista de servicios (se pueden seleccionar, ingresados por backend)
-		\item Lista de mecánicos(se pueden seleccionar, ingresados por backend)
+		\item Inicio de sesión (usuario/password, login Google y FB)
+		\item Administración de servicios por Frontend (Formulario)
+		\item Administración de horarios por día a la semana por Frontend (Formulario)
+		\item Lista de servicios (nombre, descripción, imagen, precio y horarios)
+		\item Reserva de atención (con pago con PSE y Tarjeta de Crédito)
+		\item Cancelación de reservación (Permite anular reserva y modificar horario)
+		\item Se visualiza histórico de servicios solicitados por cliente (permite descargar en PDF).
+		\item Tablero de reporte de servicios solicitados según periodo seleccionado.
 	\end{itemize}
 \end{enumerate}
 
+\subsection{Estrategia de crecimiento}
+
+Planeamos  un \textbf{Crecimiento Mixto} para poder transformar del producto TallerVirtual1 hasta el TallerVirtual3 mediante la agregación de nuevas características.
+
+\subsubsection{Representación mediante taxonomías}
+\begin{enumerate}
+\item Captura de conocimiento:
+	\begin{itemize}
+		\item Login: Permite la autenticación y autorización de los clientes en la plataforma
+		\item Administración de servicios: Gestión de los servicios ofrecidos por el taller automotriz
+		\item Lista de servicios (nombre, descripción, precio y horarios estáticos)
+		\item Administración de horarios: Permite la gestión de los horarios de disponibilidad para cada servicio ofrecido por el taller automotriz.
+		\item Visualización de servicios: Se listan los servicios que ofrece un taller.
+		\item Reserva: Funcionalidad que le permite al cliente apartar un horario para un servicio en particular
+		\item Pago: Permite realizar el pago de una reserva de un servicio
+		\item Cancelación: Permite la cancelación de una reserva de un servicio.
+		\item Histórico de servicios: Se visualizan los servicios solicitados previamente
+		\item Blog: Se muestran publicaciones y comentarios del taller automotriz
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection{Análisis de documentos e información}
+No se incluye el elemento Blog dado que no es relevante en el desarrollo de la plataforma de talleres automotrices.
+\begin{enumerate}
+\item Características Login:
+	\begin{itemize}
+	\item Autenticación con credenciales usuario/password
+	\item Autenticación con Gmail
+	\item Autenticación con FB
+	\end{itemize}
+\item Características Administración de Servicios:
+	\begin{itemize}
+	\item Gestión mediante archivo .xslx
+	\item Gestión mediante formulario visual
+	\end{itemize}
+\item Características Administración de Horarios:
+	\begin{itemize}
+	\item Gestión mediante archivo .xslx
+	\item Gestión mediante formulario visual por calendario
+	\end{itemize}
+\item Características  Visualización de servicios:
+	\begin{itemize}
+	\item Organización de servicios tipo Galeria
+	\item Organización de servicios tipo Mosaico
+	\item Organización de servicios tipo Lista
+	\end{itemize}
+\item Características Reserva:
+	\begin{itemize}
+	\item Redireccionamiento a la sección de pagos
+	\item Selección de horario
+	\end{itemize}
+\item Características Pago:
+	\begin{itemize}
+	\item PSE
+	\item Tarjeta de crédito
+	\end{itemize}
+\item Características Cancelación
+	\begin{itemize}
+	\item Anulación de reserva
+	\item Modificación horario reserva
+	\end{itemize}
+\item Características Histórico de servicios:
+	\begin{itemize}
+	\item Visualización de lista de servicios solicitados
+    \item Descarga de histórico de servicios
+	\end{itemize}			
+\end{enumerate}
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{img2}
+	\caption{Taxonomía final de Talleres Automovilísticos Virtuales}
+	\label{fig:img2}
+\end{figure}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{5cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+CAracrteristicas descubiertas & Taller Virtual 1 & Taller Virtual 2 & Taller Virtual 3 \\ \hline
+            C1 login                    & SI & \multirow{8}{3cm}{SI} & \multirow{8}{3cm}{SI}  \\
+\cline{0-1} C2 Administración Servicios & NO & & \\
+\cline{0-1} C3 Administración Horarios  & NO & & \\
+\cline{0-1} C4 Cancelación              & NO & & \\
+\cline{0-1} C5 Visualización Servicios  & SI & & \\
+\cline{0-1} C6 Reserva                  & SI & & \\
+\cline{0-1} C7 Pago                     & NO & & \\
+\cline{0-1} C7 Historicos de Servicios  & NO & & \\\hline
+\end{tabular}
+\caption{Resumen de las características para los Talleres Virtuales }
+\label{table:t9}
+\end{table}
+
+\includegraphics[width=1\textwidth]{t10}
 
 %----------------------------------------------------------------------------------------
 %	1.5 Evolución
