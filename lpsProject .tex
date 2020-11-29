@@ -6,7 +6,7 @@
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{multirow} % for tables
-\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[left=2.0cm,right=2.0cm,top=2.54cm,bottom=2.54cm]{geometry}
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 \graphicspath{{./img/}}
 %\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather 
@@ -33,15 +33,14 @@
 \begin{document}
 \begin{titlepage}
 	\begin{center}
-		\vspace{2cm}
 		{\Large \textbf{LÍNEAS DE PRODUCTOS DE SOFTWARE}}\\
 		\vspace{3cm}
 		{\Large \textbf{LÍNEA TALLERES VIRTUALES}}\\
 		\vspace{3cm}
 		{\large \today}\\
 		\vspace{3cm}
-		{\large \textbf{Óscar Fernando calero mayor}}\\
-		{\large \textbf{William Andrey Garzón Bohórquez}}\\
+		{\large \textbf{Óscar Fernando Calero Mayor}}\\
+		{\large \textbf{William Andrey Garzón Bohóquez}}\\
 		{\large \textbf{Dario Leonardo Narvaez Jacome}}\\
 		\vspace{1cm}
 		{\large Pontificia Universidad Javeriana de Cali}\\
@@ -59,13 +58,13 @@
 %	1 Definición del alcance
 %----------------------------------------------------------------------------------------
 \chapter{Definición del alcance}
-
-
 %----------------------------------------------------------------------------------------
 %	1.1. Estudio del mercado y de factibilidad
 %----------------------------------------------------------------------------------------
 \section{Estudio del mercado y de factibilidad}
-
+%----------------------------------------------------------------------------------------
+%	1.1.1 Análisis de problema y las oportunidades
+%----------------------------------------------------------------------------------------
 \subsection{Análisis de problema y las oportunidades}
 
 Con la revolución 4.0 muchas compañías han optado por generar nuevos servicios tecnológicos para brindar mejor servicio a sus clientes y dar un servicio más personalizado a las necesidades de los clientes. Existen muchas compañías como pymes o microempresa que no poseen el recurso para acceder al desarrollo de estos servicios tecnológicos y que les permitan mantenerse competitivos en este mercado cambiante de tecnología. Dentro de estas compañías se encuentran los talleres de automóviles que poseen mucha variedad por servicios y por tamaño es por esta razón que se tiene una oportunidad para crear un LP que cubra la necesidad de cada tipo de taller o servicios que ofrezcan.
@@ -101,11 +100,11 @@ Y finalmente la variable socioeconómica por que estará enfocado en negocios mi
 \subsubsection{Requisitos no funcionales}
 
 \begin{enumerate}
-\item  El sistema debe ser responsivo y adaptarse a Computadores, Tablet o Móviles
-\item  El sistema debe aplicar la reglamentación colombiana para este tipo de servicios
+\item El sistema debe ser responsivo y adaptarse a Computadores, Tablet o Móviles
+\item El sistema debe aplicar la reglamentación colombiana para este tipo de servicios
 \item La información financiera de los clientes debe manejarse de forma segura
-\item  La información de los clientes debe respectar las leyes de habeas data
-\item   El sistema debe ser de fácil mantenibilidad
+\item La información de los clientes debe respectar las leyes de habeas data
+\item El sistema debe ser de fácil mantenibilidad
 \item El sistema debe tener disponibilidad
 \item El sistema debe ser pensando en usabilidad
 \item El sistema debe dar respuesta a cualquier petición con un tiempo menor a 10 seg
@@ -480,7 +479,7 @@ No se incluye el elemento Blog dado que no es relevante en el desarrollo de la p
 \begin{table}[htbp]
 \centering
 \begin{tabular}{|p{5cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-CAracrteristicas descubiertas & Taller Virtual 1 & Taller Virtual 2 & Taller Virtual 3 \\ \hline
+Caracrteristicas descubiertas & Taller Virtual 1 & Taller Virtual 2 & Taller Virtual 3 \\ \hline
             C1 login                    & SI & \multirow{8}{3cm}{SI} & \multirow{8}{3cm}{SI}  \\
 \cline{0-1} C2 Administración Servicios & NO & & \\
 \cline{0-1} C3 Administración Horarios  & NO & & \\
@@ -531,10 +530,68 @@ Para la implementación se manejar las siguientes tecnologías debido a que son 
 	\end{itemize}
 \end{itemize}
 
+
+%----------------------------------------------------------------------------------------
+%	1 Definición del alcance
+%----------------------------------------------------------------------------------------
+\chapter{Espacio del problema}
+
+\section{Ingeniería de requisitos del dominio}
+Para la especificación de los requisitos utilizaremos el siguiente témplate
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
+
+  {\rotatebox{90}{ID}} &
+  {\rotatebox{90}{Modulo}} & 
+  {\rotatebox{90}{Tipo}} & 
+  {\rotatebox{90}{Version}} & 
+  {\rotatebox{90}{Descripcion}} & 
+  {\rotatebox{90}{Fuente}} & 
+  {\rotatebox{90}{Variablilidad}} &
+  {\rotatebox{90}{Estabilidad}} &
+  {\rotatebox{90}{Fecha de entrega}} &
+  {\rotatebox{90}{Prioridad}}  \\[0.5ex] \hline
+  
+  1&
+  PAGO& 
+  RFU& 
+  0.1 & 
+  El sistema de linea de productos de Talleres virtuales El sistema de linea de productos de Talleres virtuales & 
+  Cliente & 
+  no &
+  no &
+  29/11/2020 &
+  Alta \\[0.5ex] \hline
+  
+  
+  &
+  & 
+  & 
+  & 
+  El sistema de linea de productos de Talleres virtuales & 
+  & 
+  &
+  &
+  &
+   \\[0.5ex] \hline
+  
+  
+\end{tabular}
+\caption{Requisitos}
+\label{table:t5}
+\end{table}
+
+
+
+\section{Modelo de variablilidad}
+
+
+
+
+
 \medskip
 \bibliographystyle{abbrv}
 \bibliography{libreria}
-
-
-
 \end{document}
