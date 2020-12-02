@@ -6,7 +6,8 @@
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{multirow} % for tables
-\usepackage[left=2.0cm,right=2.0cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{longtable} % for long tables
+\usepackage[left=1.5cm,right=1.5cm,top=2.54cm,bottom=2.54cm]{geometry}
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 \graphicspath{{./img/}}
 %\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather 
@@ -306,17 +307,14 @@ En conclusión, podemos ver que la rentabilidad de la línea de productos nos of
 %----------------------------------------------------------------------------------------
 \section{Análisis interno}
 
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|c|p{8cm}|p{4cm}|} \hline
+\begin{longtable}{|c|p{8cm}|p{4cm}|} \hline
  Nombre & Habilildades  & Área de Conocimiento \\[0.5ex] \hline
  Oscar & PHP, Angular, JavaScript, Postgres, Kotlin   & Automotriz, Financiero \\[0.5ex] \hline
  William & Java, Angular, Python, JavaScript ,Spring MVC, BOOT, SECURITY, JSP, HTML, CSS, BOOTSTRAP, Thymeleaf, Hibernatem, SQL, WebService REST, SOAP   & Financiero, Bancario \\[0.5ex] \hline
  Dario & Java/Groovy, Angular   & Expedición Documentos Civiles, Domicilios \\[0.5ex] \hline
-\end{tabular}
 \caption{Análisis interno}
 \label{table:t4}
-\end{table}
+\end{longtable}
 
 \vspace{4cm}
 %----------------------------------------------------------------------------------------
@@ -539,14 +537,28 @@ Para la implementación se manejar las siguientes tecnologías debido a que son 
 \section{Ingeniería de requisitos del dominio}
 Para la especificación de los requisitos utilizaremos el siguiente témplate
 
-
-Estabilidad 0-5  Que tan estable es el requisito para realizar cambios en el\\
-
-Variablilidad True Obligatorio False Opcional
-
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{0.6cm}|p{4.6cm}|p{1cm}|p{0.8cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
+\begin{tabular}{|c|p{10cm}|} \hline
+Nombre del atributo & Descripción \\[0.5ex] \hline
+ID & Identificador único del requisito. la primera leta hace referencia al modulo al que pertenece (S) Servicios,(L) Login, (R) Reserva, (P) Pago, (A) Administración, la segunda letra hace referencia al tipo de requisito (F) Funcional, (N) No funcional, (C) Constraint, Ejemplo: PF\_1 = primer requisto funcional del modulo de pago \\[0.5ex] \hline
+Modulo & Categoría a la que pertenece el requisito de acuerdo con el tema del proyecto y su funcionalidad.\\[0.5ex] \hline
+Tipo & i el requisito es Funcional (RFU), si no es funcional (RNF) y si es una constraint (CON) \\[0.5ex] \hline
+Version & En qué momento del desarrollo será llevada a cabo la realización del requisito.\\[0.5ex] \hline
+Descripcion & Se detalla más a fondo el requisito.\\[0.5ex] \hline
+Fuente & De donde se originó la idea del requisito: cliente, asesor, alguna técnica utilizada, etc.\\[0.5ex] \hline
+Variablilidad & si el requisito va en core (True) y si es variable (False) \\[0.5ex] \hline
+Estabilidad &  Que tan estable es el requisito para realizar cambios de (0-5) donde 0 no es estable y 5 es completamente estable\\[0.5ex] \hline
+Fecha de entrega & La fecha de entrega del requisito a producción\\[0.5ex] \hline
+Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \hline
+\end{tabular}
+\caption{Témplate de Requisitos}
+\label{table:t6}
+\end{table}
+
+\vspace{6cm}
+
+\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{0.6cm}|p{4.6cm}|p{1cm}|p{0.8cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
 
   {\rotatebox{90}{ID}} &
   {\rotatebox{90}{Modulo}} & 
@@ -558,52 +570,57 @@ Variablilidad True Obligatorio False Opcional
   {\rotatebox{90}{Estabilidad}} &
   {\rotatebox{90}{Fecha de entrega  }} &
   {\rotatebox{90}{Prioridad}}  \\[0.5ex] \hline
-  
-  PF\_1 &
-  PAGO& 
-  RFU RNF CON & 
-  0.1 & 
-  El sistema de linea de productos de Talleres virtuales El sistema de linea de productos de Talleres virtuales & 
-  Cliente & 
-  True False &
-  0-5 &
-  29/11/2020 &
-  1-100 \\[0.5ex] \hline
    
-  PN\_2 &
-  PAGO& 
-  RFU RNF CON & 
+  AF\_1 &
+  {\rotatebox{270}{ADMINISTRACIÓN }} & 
+  RFU& 
   0.1 & 
-  El sistema de linea de productos de Talleres virtuales El sistema de linea de productos de Talleres virtuales & 
+  El sistema de Tallers WEB podrá proveer a los administradores gestionar los servicios ofrecidos  & 
   Cliente & 
-  True False &
+  True &
   0-5 &
   29/11/2020 &
   1-100 \\[0.5ex] \hline
   
+ 
   
-  &
-  & 
-  & 
-  & 
-  & 
-  & 
-  &
-  &
-  &
+  AF\_2 &
+  {\rotatebox{270}{ADMINISTRACIÓN }}  & 
+  RFU& 
+  0.1 & 
+  El sistema de Tallers WEB podrá proveer a los administradores gestionar los Horarios de atencion al publico  & 
+  Cliente & 
+  True &
+  0-5 &
+  29/11/2020 &
+  1-100 \\[0.5ex] \hline
+  
+   &
+   & 
+   & 
+   & 
+   & 
+   & 
+   &
+   &
+   &
    \\[0.5ex] \hline
   
-  
-\end{tabular}
+
 \caption{Requisitos}
 \label{table:t5}
-\end{table}
+\end{longtable}
 
 
 
 \section{Modelo de variablilidad}
 
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{img3}
+	\caption{Vista del modelo}
+	\label{fig:img3}
+\end{figure} 
 
 
 
