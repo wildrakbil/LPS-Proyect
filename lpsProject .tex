@@ -539,9 +539,14 @@ Para la implementación se manejar las siguientes tecnologías debido a que son 
 \section{Ingeniería de requisitos del dominio}
 Para la especificación de los requisitos utilizaremos el siguiente témplate
 
+
+Estabilidad 0-5  Que tan estable es el requisito para realizar cambios en el\\
+
+Variablilidad True Obligatorio False Opcional
+
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
+\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{0.6cm}|p{4.6cm}|p{1cm}|p{0.8cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
 
   {\rotatebox{90}{ID}} &
   {\rotatebox{90}{Modulo}} & 
@@ -551,26 +556,37 @@ Para la especificación de los requisitos utilizaremos el siguiente témplate
   {\rotatebox{90}{Fuente}} & 
   {\rotatebox{90}{Variablilidad}} &
   {\rotatebox{90}{Estabilidad}} &
-  {\rotatebox{90}{Fecha de entrega}} &
+  {\rotatebox{90}{Fecha de entrega  }} &
   {\rotatebox{90}{Prioridad}}  \\[0.5ex] \hline
   
-  1&
+  PF\_1 &
   PAGO& 
-  RFU& 
+  RFU RNF CON & 
   0.1 & 
   El sistema de linea de productos de Talleres virtuales El sistema de linea de productos de Talleres virtuales & 
   Cliente & 
-  no &
-  no &
+  True False &
+  0-5 &
   29/11/2020 &
-  Alta \\[0.5ex] \hline
+  1-100 \\[0.5ex] \hline
+   
+  PN\_2 &
+  PAGO& 
+  RFU RNF CON & 
+  0.1 & 
+  El sistema de linea de productos de Talleres virtuales El sistema de linea de productos de Talleres virtuales & 
+  Cliente & 
+  True False &
+  0-5 &
+  29/11/2020 &
+  1-100 \\[0.5ex] \hline
   
   
   &
   & 
   & 
   & 
-  El sistema de linea de productos de Talleres virtuales & 
+  & 
   & 
   &
   &
