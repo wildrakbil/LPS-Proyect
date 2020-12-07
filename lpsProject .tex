@@ -530,7 +530,7 @@ Para la implementación se manejar las siguientes tecnologías debido a que son 
 
 
 %----------------------------------------------------------------------------------------
-%	1 Definición del alcance
+%	2 Espacio del problema
 %----------------------------------------------------------------------------------------
 \chapter{Espacio del problema}
 
@@ -623,18 +623,52 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
 \label{table:t5}
 \end{longtable}
 
-
-
 \section{Modelo de variablilidad}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{img3}
-	\caption{Vista del modelo}
+	\caption{Modelo de Variablilidad}
 	\label{fig:img3}
 \end{figure} 
 
 
+\section{Diagnóstico y reparación del modelo de Variablilidad}
+Para realizar el diagnóstico y reparar nuestro modelo de variabilidad transformaremos el modelo en lenguaje GNU prolog.\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img4}
+	\caption{Modelo de Variablilidad de referencia para GNU prolog}
+	\label{fig:img4}
+\end{figure} 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{gnu}
+	\caption{Modelo de Variablilidad en lenguaje GNU prolog}
+	\label{fig:gnu}
+\end{figure} 
+
+\begin{figure}[h]
+	\centering
+	\caption{findall(Config,lp(Config),Solutions), length(Solutions,Nsolutions).}
+	\includegraphics[width=1\textwidth]{gnu1}
+	\label{fig:gnu1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Algunas validaciones del modelo.}
+	\includegraphics[width=1\textwidth]{gnu2}
+	\label{fig:gnu2}
+\end{figure}
+
+
+
+%----------------------------------------------------------------------------------------
+%	3 Definición de la arquitectura de referencia del dominio
+%----------------------------------------------------------------------------------------
+\chapter{Definición de la arquitectura de referencia del dominio}
 
 \medskip
 \bibliographystyle{abbrv}
