@@ -541,13 +541,13 @@ Para la especificación de los requisitos utilizaremos el siguiente témplate
 \centering
 \begin{tabular}{|c|p{10cm}|} \hline
 Nombre del atributo & Descripción \\[0.5ex] \hline
-ID & Identificador único del requisito. la primera leta hace referencia al modulo al que pertenece (S) Servicios,(L) Login, (R) Reserva, (P) Pago, (A) Administración, la segunda letra hace referencia al tipo de requisito (F) Funcional, (N) No funcional, (C) Constraint, Ejemplo: PF\_1 = primer requisto funcional del modulo de pago \\[0.5ex] \hline
+ID & Identificador único del requisito. la primera leta hace referencia al modulo al que pertenece (X) Todo el Sistema,(S) Servicios,(L) Login, (R) Reserva, (P) Pago, (A) Administración, la segunda letra hace referencia al tipo de requisito (F) Funcional, (N) No funcional, (C) Constraint, Ejemplo: PF\_1 = primer requisto funcional del modulo de pago \\[0.5ex] \hline
 Modulo & Categoría a la que pertenece el requisito de acuerdo con el tema del proyecto y su funcionalidad.\\[0.5ex] \hline
 Tipo & i el requisito es Funcional (RFU), si no es funcional (RNF) y si es una constraint (CON) \\[0.5ex] \hline
 Version & En qué momento del desarrollo será llevada a cabo la realización del requisito.\\[0.5ex] \hline
 Descripcion & Se detalla más a fondo el requisito.\\[0.5ex] \hline
 Fuente & De donde se originó la idea del requisito: cliente, asesor, alguna técnica utilizada, etc.\\[0.5ex] \hline
-Variablilidad & si el requisito va en core (True) y si es variable (False) \\[0.5ex] \hline
+Variablilidad & si el requisito va en core (False) y si es variable (True) \\[0.5ex] \hline
 Estabilidad &  Que tan estable es el requisito para realizar cambios de (0-5) donde 0 no es estable y 5 es completamente estable\\[0.5ex] \hline
 Fecha de entrega & La fecha de entrega del requisito a producción\\[0.5ex] \hline
 Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \hline
@@ -556,9 +556,14 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
 \label{table:t6}
 \end{table}
 
+\textbf{Palabras clave:}
+\begin{itemize}
+\item \textbf{Gestionar:} realizar un CRUD crear editar eliminar  
+\item \textbf{N.N:}No aplica 
+\end{itemize}
 \vspace{6cm}
 
-\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{0.6cm}|p{4.6cm}|p{1cm}|p{0.8cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
+\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{0.6cm}|p{4.4cm}|p{1.2cm}|p{0.8cm}|p{1cm}|p{2cm}|p{1cm}|} \hline
 
   {\rotatebox{90}{ID}} &
   {\rotatebox{90}{Modulo}} & 
@@ -575,12 +580,12 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
   {\rotatebox{270}{ADMINISTRACIÓN }} & 
   RFU& 
   0.1 & 
-  El sistema de Tallers WEB debera proveer a los administradores gestionar los servicios ofrecidos  & 
-  Cliente & 
-  True &
-  0-5 &
-  29/11/2020 &
-  1-100 \\[0.5ex] \hline
+  Los sistemas de Talleres WEB deberan proveer a los administradores la opcion de gestionar los servicios ofrecidos  & 
+  William Garzon & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
   
  
   
@@ -588,24 +593,61 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
   {\rotatebox{270}{ADMINISTRACIÓN }}  & 
   RFU& 
   0.1 & 
-  El sistema de Tallers WEB debera proveer a los administradores gestionar los Horarios de atencion al publico  & 
-  Cliente & 
-  True &
-  0-5 &
-  29/11/2020 &
-  1-100 \\[0.5ex] \hline
+  Los sistemas de Talleres WEB deberan proveer a los administradores la opcion de gestionar los Horarios de atencion al publico  & 
+  William Garzon & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
   
   
   AF\_3 &
   {\rotatebox{270}{ADMINISTRACIÓN }}  & 
   RFU& 
-  0.1 & 
-  El sistema de Tallers WEB debera proveer a los administradores genrerar cobro de una reserva  & 
-  Cliente & 
+  0.2 & 
+  Los sistemas de Talleres WEB pueden proveer a los administradores genrerar el cobro a las reservas  & 
+  William Garzon & 
   True &
-  0-5 &
-  29/11/2020 &
-  1-100 \\[0.5ex] \hline
+  5 &
+  29/01/2021 &
+  1 \\[0.5ex] \hline
+  
+  
+  AF\_4 &
+  {\rotatebox{270}{ADMINISTRACIÓN }}  & 
+  RFU& 
+  0.1 & 
+  Los sistemas de Talleres WEB deberán proveer a los administradores una Dashboard que les permita acceder al módulo de administración cuando el administrados haya iniciado sección & 
+  William Garzon & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  AN\_5 &
+  {\rotatebox{270}{ADMINISTRACIÓN }}  & 
+  RFU& 
+  0.2 & 
+  Los sistemas de Talleres WEB deberán listar los servicios existentes al administrador en menos de 1 segundo & 
+  William Garzon & 
+  True &
+  5 &
+  29/01/2021 &
+  1 \\[0.5ex] \hline
+  
+  
+  XN\_3 &
+  {\rotatebox{270}{TODOS }}  & 
+  RFU& 
+  0.1 & 
+  Los sistemas de Talleres WEB deben customizar su interfaz según los estándares de cada cliente & 
+  William Garzon & 
+  True &
+  0 &
+  15/12/2020  &
+  60 \\[0.5ex] \hline
+  
+
   
    &
    & 
