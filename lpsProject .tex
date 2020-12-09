@@ -786,12 +786,51 @@ Basados en lo anterior la LP de Talleres Web deberá soportar: Aplicaciones Web 
 
 
 \subsection{Identificar la variabilidad en el estilo arquitectónico}
+Estilos de arquitecrura considerados \cite{url3}
+
+
+\begin{enumerate}
+\item Web Application
+\begin{itemize}
+	\item Utilizar capas para dividir la aplicación de manera lógica en capas de presentación, negocios y acceso a datos. Ayuda a crear código mantenible y nos permite monitorear y optimizar el rendimiento de cada capa por separado.\\\\
+Utilizar la abstracción para implementar un acoplamiento flexible entre capas mediante la definición de componentes de interfaz, como una fachada con entradas y salida.\\\\
+Considere el almacenamiento en caché para minimizar los viajes de ida y vuelta del servidor.
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{arq1}
+\end{center}
+\item Service Applications
+\begin{itemize}
+	\item Utilizar una interfaz pública que proporciona acceso a una unidad de funcionalidad mediante servicios expuestos a travéz de internet y que están débilmente acoplados y pueden combinarse dentro de un cliente, o combinarse con otros servicios, para proporcionar una funcionalidad que es más compleja.\\\\
+	Considerando el uso de un enfoque por capas para diseñar aplicaciones de servicio y evitar el acoplamiento estrecho entre capas.\\\\
+	Asegurando la autentificación mediante web token el cual nos permite gestionar de manera eficiente nuestra LP, otorgando accesos definidos por cada perfil del aplicativo.
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{arq2}
+\end{center}
+\end{enumerate}
+
+
+
 \subsection{Identificar la variabilidad en las estrategias de despliegue}
 \subsection{Identificar la variabilidad en los aspectos técnicos}
 \subsection{Modelo de variabilidad de la arquitectura de referencia}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{model1}\\
+\includegraphics[width=0.8\textwidth]{model2}
+\end{center}
+
 \subsection{referencia resultante arquitectura}
 \subsubsection{Diseño de la Arquitectura de referencia}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{arq3}
+\end{center}
+
 \subsubsection{Documentación de componentes de dominio a nivel de diseño}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{dominio}
+\end{center}
+
 \subsubsection{Documentación general del componente }
 
 \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
