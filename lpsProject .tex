@@ -714,6 +714,106 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
   5 &
   15/12/2020  &
   100 \\[0.5ex] \hline 
+  
+  
+  SF\_1 &
+  {\rotatebox{270}{SERVICIOS }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual deberá proveer a administradores Gestionar servicios del taller si y solo si el usuario esta autenticado en el sistema  & 
+  Oscar Calero & 
+  True &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  SF\_2 &
+  {\rotatebox{270}{SERVICIOS }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual deberá proveer a administradores Gestionar servicios del taller si y solo si el usuario tiene el permiso para esta gestión.  & 
+  Oscar Calero & 
+  True &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+   SF\_3 &
+  {\rotatebox{270}{SERVICIOS }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual deberá proveer a los clientes Consultar servicios del taller si y solo si servicio esta activo por el administrador.  & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+    SF\_4 &
+  {\rotatebox{270}{SERVICIOS }} & 
+  RFU& 
+  0.1 & 
+ El sistema del taller virtual deberá proveer a los clientes Visualizar las galería de imágenes de los servicios del taller si y solo si el servicio está activo por el administrador.  & 
+  Oscar Calero & 
+  True &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  SF\_5 &
+  {\rotatebox{270}{SERVICIOS }} & 
+  RFU& 
+  0.1 & 
+ El sistema del taller virtual deberá proveer a los clientes Visualizar los mosaicos de los servicios del taller si y solo si el servicio está activo por el administrador.  & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  LF\_1 &
+  {\rotatebox{270}{LOGIN }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual permitirá proveer a clientes la habilidad de registrarse con su cuenta de Google si y solo si este no está registrado.    & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  LF\_2 &
+  {\rotatebox{270}{LOGIN }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual permitirá proveer a clientes la habilidad de registrarse con su cuenta de Facebook si y solo si este no está registrado.     & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  LF\_3 &
+  {\rotatebox{270}{LOGIN }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual permitirá proveer a clientes la habilidad de registrarse con sus datos de registro si y solo si este no está registrado.     & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
+  
+  LF\_4 &
+  {\rotatebox{270}{LOGIN }} & 
+  RFU& 
+  0.1 & 
+  El sistema del taller virtual permitirá proveer a los administradores la habilidad de autenticarse con su login y contraseña si y solo si este está registrado y activo.     & 
+  Oscar Calero & 
+  False &
+  5 &
+  15/12/2020 &
+  100 \\[0.5ex] \hline
 
    &
    & 
@@ -813,6 +913,45 @@ Considere el almacenamiento en caché para minimizar los viajes de ida y vuelta 
 
 
 \subsection{Identificar la variabilidad en las estrategias de despliegue}
+
+A continuación, se presenta la variabilidad en las estrategias de despliegues basados en los estilos arquitectónicos planteados anteriormente. 
+
+
+\begin{enumerate}
+\item Web Application
+\begin{itemize}
+	\item Para este tipo de aplicación es muy común usar el patrón MVC por esta razón se plantea una arquitectura de 3 capas como se presenta a continuación:\\\\
+\begin{itemize}
+\item Capa Cliente: (Componentes UI )
+\item Capa Negocio: (Componentes de negocio,entidades de negocio o flujo de trabajo del negocio)
+\item Capa Datos  : (Componentes Data o servicios)
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{oc_img2}
+\end{center}
+\item Service Applications
+\begin{itemize}
+	\item  Para este tipo de estilo es muy común usar interfaces con los servicios por medio de APIS por esta razón se plantea una arquitectura de 4 capas como se presenta a continuación:\\\\
+	
+\begin{itemize}	
+	\item Capa Cliente: (Componentes UI )
+\item Capa Servicios: (Componentes de servicios,interfaces de servicios)
+\item Capa Negocio: (Componentes de negocio,entidades de negocio, flujo de trabajo del negocio y facahda de la aplicación )
+\item Capa Datos  : (Componentes Data o servicios)
+
+\end{itemize}	
+\end{itemize}
+\begin{center}
+
+
+\includegraphics[width=0.5\textwidth]{oc_img3}
+\end{center}
+\end{enumerate}
+
+
+Finalmente, se identifica en estos dos estilos arquitectónicos la variación en el despliegue seria en la capa de servicio y si esta capa se implementa toca agregar el componente “Facade o Fachada” en la capa de negocio para implementar comunicación entre estas dos capas y evitar que sean dependientes entre ellas   
+
 \subsection{Identificar la variabilidad en los aspectos técnicos}
 
 \begin{longtable}{|p{2cm}|p{2cm}|p{6cm}|p{2cm}|} \hline
