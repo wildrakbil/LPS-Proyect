@@ -828,7 +828,7 @@ Prioridad & (1-100) donde 100 es alta prioridad y 1 es baja prioridad\\[0.5ex] \
   
 
 \caption{Requisitos}
-\label{table:t10}
+\label{table:t5}
 \end{longtable}
 
 \section{Modelo de variablilidad}
@@ -964,7 +964,7 @@ Base de Datos &  MySql& & \\[0.5ex] \hline
 Pasarela de Pagos & & &\\[0.5ex] \hline
 Servicios Web & & &\\[0.5ex] \hline
 \caption{Variabilidad Aspectos Técnicos}
-\label{table:t12}
+\label{table:t6}
 \end{longtable}
 
 \subsection{Modelo de variabilidad de la arquitectura de referencia}
@@ -989,69 +989,21 @@ Servicios Web & & &\\[0.5ex] \hline
 \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
 Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
 & & & & \\[0.5ex] \hline
-Gestión variabilidad componente & \multicolumn{4}{p{12cm}|}{Define si el componenete es común para cualquier linea de producto} \\ \hline
-Tipo de componente & \multicolumn{4}{p{12cm}|}{Define si es desarrollo es propio o es tercerisado} \\ \hline
-Resumen del componente & \multicolumn{4}{p{12cm}|}{Para que sirve el componente} \\ \hline
-Requisistos que implementa el componenete & \multicolumn{4}{p{12cm}|}{Requisitos realcionados con las categorías asociadas a los productos } \\ \hline
-Versión & \multicolumn{4}{p{12cm}|}{ numero de version } \\ \hline
-Fecha revisión & \multicolumn{4}{p{12cm}|}{ Fecha del diseño:} \\ \hline
-Diseño & \multicolumn{4}{p{12cm}|}{Quien realizo el diseño} \\ \hline
-Desarrolladores & \multicolumn{4}{p{12cm}|}{Por definir} \\ \hline
-Decisiones técnicas & \multicolumn{4}{p{12cm}|}{Anotaciones tecnicas del componente} \\ \hline
-Restricciones & \multicolumn{4}{p{12cm}|}{De dsiponibilidad} \\ \hline
-Atributos de calidad & \multicolumn{4}{p{12cm}|}{Atributos asociados al componente} \\ \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Define si el componenete es común para cualquier linea de producto} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Define si es desarrollo es propio o es tercerisado} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Para que sirve el componente} \\ \hline
+Requisistos que implementa el componenete & \multicolumn{4}{|c|}{Requisitos realcionados con las categorías asociadas a los productos } \\ \hline
+Versión & \multicolumn{4}{|c|}{ numero de version } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ Fecha del diseño:} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Quien realizo el diseño} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Por definir} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Anotaciones tecnicas del componente} \\ \hline
+Restricciones & \multicolumn{4}{|c|}{De dsiponibilidad} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Atributos asociados al componente} \\ \hline
 \caption{Témplate para documentar componentes}
-\label{table:t11}
+\label{table:t6}
 \end{longtable}
 
-\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
-001 & Cobro & ADMINISTRACION & COMP001 &  \\[0.5ex] \hline
-Gestión variabilidad componente & \multicolumn{4}{p{12cm}|}{Este componente solo estara implementado en la lineas de producto que ofresca la opcion de pago online} \\ \hline
-Tipo de componente     & \multicolumn{4}{p{12cm}|}{Desarrollo propio} \\ \hline
-Resumen del componente & \multicolumn{4}{p{12cm}|}{Este componente permite generar el cobro de un servicio asignando el valor a cobrar} \\ \hline
-Requisistos que implementa el componenete & \multicolumn{4}{p{12cm}|}{AF\_3 , AF\_4} \\ \hline
-Versión                & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline
-Fecha revisión         & \multicolumn{4}{p{12cm}|}{9 de diciembre del 2020} \\ \hline
-Diseño                 & \multicolumn{4}{p{12cm}|}{William A. Garzon B.} \\ \hline
-Desarrolladores        & \multicolumn{4}{p{12cm}|}{Por definir} \\ \hline
-Decisiones técnicas    & \multicolumn{4}{p{12cm}|}{El componenete tendrá una separacion de cuatro capas, vista, servicio, negocio, modelo} \\ \hline
-Restricciones          & \multicolumn{4}{p{12cm}|}{Las funcionalidades de este componente estarán únicamente disponibles para usuarios registrados con perfil administrador} \\ \hline
-Atributos de calidad   & \multicolumn{4}{p{12cm}|}{Modificabilidad: El componente debe estar en la capacidad de adaptarce a las necesidades del cliente si asi lo requiere} \\ \hline
-\end{longtable}
-
-
-\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
-002 & Servicios & ADMINISTRACION & COMP002 &  \\[0.5ex] \hline
-Gestión variabilidad componente & \multicolumn{4}{p{12cm}|}{} \\ \hline
-Tipo de componente     & \multicolumn{4}{p{12cm}|}{Desarrollo propio} \\ \hline
-Resumen del componente & \multicolumn{4}{p{12cm}|}{Sirve para crear, modificar, eliminar y buscar los servicios que puede ofrecer un taller de mecánica} \\ \hline
-Requisistos que implementa el componenete & \multicolumn{4}{p{12cm}|}{AF\_1 , AF\_4, AN\_5 } \\ \hline
-Versión                & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline
-Fecha revisión         & \multicolumn{4}{p{12cm}|}{9 de diciembre del 2020} \\ \hline
-Diseño                 & \multicolumn{4}{p{12cm}|}{William A. Garzon B.} \\ \hline
-Desarrolladores        & \multicolumn{4}{p{12cm}|}{Por definir} \\ \hline
-Decisiones técnicas    & \multicolumn{4}{p{12cm}|}{El componenete tendrá una separacion de cuatro capas, vista, servicio, negocio, modelo} \\ \hline
-Restricciones          & \multicolumn{4}{p{12cm}|}{as funcionalidades de este componente estarán copletamente disponibles para usuarios registrados con perfil administrador, y los usuarios con perfil cliente solo podran realizar consultas} \\ \hline
-Atributos de calidad   & \multicolumn{4}{p{12cm}|}{Disponibilidad: este componenete deberar tener alta disponibilidad} \\ \hline
-\end{longtable}
-
-\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
-Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
-003 & Horarios & ADMINISTRACION & COMP003 &  \\[0.5ex] \hline
-Gestión variabilidad componente & \multicolumn{4}{p{12cm}|}{} \\ \hline
-Tipo de componente     & \multicolumn{4}{p{12cm}|}{Desarrollo propio} \\ \hline
-Resumen del componente & \multicolumn{4}{p{12cm}|}{Sirve para crear, modificar, eliminar y buscar los horarios que ofrecer un taller de mecánica} \\ \hline
-Requisistos que implementa el componenete & \multicolumn{4}{p{12cm}|}{AF\_2 , AF\_4} \\ \hline
-Versión                & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline
-Fecha revisión         & \multicolumn{4}{p{12cm}|}{9 de diciembre del 2020} \\ \hline
-Diseño                 & \multicolumn{4}{p{12cm}|}{William A. Garzon B.} \\ \hline
-Desarrolladores        & \multicolumn{4}{p{12cm}|}{Por definir} \\ \hline
-Decisiones técnicas    & \multicolumn{4}{p{12cm}|}{El componenete tendrá una separacion de cuatro capas, vista, servicio, negocio, modelo} \\ \hline
-Restricciones          & \multicolumn{4}{p{12cm}|}{as funcionalidades de este componente estarán copletamente disponibles para usuarios registrados con perfil administrador, y los usuarios con perfil cliente solo podran realizar consultas} \\ \hline
-Atributos de calidad   & \multicolumn{4}{p{12cm}|}{Disponibilidad: este componenete deberar tener alta disponibilidad} \\ \hline
-\end{longtable}
 
 
 
