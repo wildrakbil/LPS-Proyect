@@ -954,15 +954,15 @@ Finalmente, se identifica en estos dos estilos arquitectónicos la variación en
 
 \subsection{Identificar la variabilidad en los aspectos técnicos}
 
-\begin{longtable}{|p{2cm}|p{2cm}|p{6cm}|p{2cm}|} \hline
-Característica & Tecnologías& Motivación & Variabilidad\\[0.5ex] \hline
-Lenguaje Backend & Java& Experiencia del equipo& \\[0.5ex] \hline
-Lenguaje Frontend & JS& Experiencia del equipo& \\[0.5ex] \hline
-Framework Backend &  Spring& & \\[0.5ex] \hline
-Framework Frontend &  Angular& & \\[0.5ex] \hline
-Base de Datos &  MySql& & \\[0.5ex] \hline
-Pasarela de Pagos & & &\\[0.5ex] \hline
-Servicios Web & & &\\[0.5ex] \hline
+\begin{longtable}{|p{2cm}|p{2cm}|p{8cm}|} \hline
+Característica & Tecnologías& Motivación\\[0.5ex] \hline
+Lenguaje Backend & Java& El aspecto relevante para el desarrollo de la plataforma utilizando Java se debe a la madurez de la tecnología y a la experiencia del equipo de trabajo en este lenguaje.\\[0.5ex] \hline
+Lenguaje Frontend & JS& La amplia comunidad, documentación, frameworks de desarrollo y experiencia del equipo en este lenguaje fueron los motivos principales para seleccionar JavaScript.\\[0.5ex] \hline
+Framework Backend &  Spring& El soporte, comunidad, madurez y la experiencia del equipo son los motivos para la elección de esta tecnología.\\[0.5ex] \hline
+Framework Frontend &  Angular& Los frameworks de desarrollo frontend tienen múltiples competidores y opciones. La elección de Angular se debió principalmente a la experiencia del equipo.\\[0.5ex] \hline
+Base de Datos &  Relacional& Se trabajará con Hibernate como herramienta de mapeo objeto-relacional ORM para permitir el cambio entre tipos de bases de datos relacionales. Inicialmente se trabajará con MySql.\\[0.5ex] \hline
+Pasarela de Pagos & PayU& Costos y experiencia del equipo.\\[0.5ex] \hline
+Servicios Web & REST& La utilización de REST como interfaz para la comunicación entre sistemas es amplia. \\[0.5ex] \hline
 \caption{Variabilidad Aspectos Técnicos}
 \label{table:t6}
 \end{longtable}
@@ -1268,6 +1268,152 @@ Atributos de calidad & \multicolumn{4}{|c|}{Funcionalidad y seguridad} \\ \hline
 \caption{Componente Crear Usuario - Capa Business}
 \label{table:t6}
 \end{longtable}
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N001& Crear Reservas& Bussiness& Reservas& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Este componente no implementa variabilidad y es común para toda la LP taller virtual} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite al usuario la creación de una reserva} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero RF1 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad y Mantenibilidad} \\ \hline
+\caption{Componente Crear Reserva - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N002& Editar Reservas& Bussiness& Reservas& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Este componente no implementa variabilidad y es común para toda la LP taller virtual} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite al usuario la edición de una reserva} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero RF2 y RF3 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad y Mantenibilidad} \\ \hline
+\caption{Componente Editar Reserva - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N003& Listar Reservas& Bussiness& Reservas& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Este componente no implementa variabilidad y es común para toda la LP taller virtual} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite al administrador realizar consultas de reservas realizadas por usuarios} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero AF3 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Listar Reservas - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N004& Pago PSE& Bussiness& Pagos& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Este componente es variable según las características del producto adquirido por el cliente} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite la configuración personalizada del pago por PSE para cada establecimiento.} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero PF3 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Pago PSE - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N005& Pago T. Crédito& Bussiness& Pagos& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{Este componente es variable según las características del producto adquirido por el cliente} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite la configuración personalizada del pago por T. de Crédito para cada establecimiento.} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero PF3 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Pago Tarjeta Crédito - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N005& Pago Efectivo& Bussiness& Pagos& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{{Este componente no implementa variabilidad y es común para toda la LP taller virtual}} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite confirmar la realización del pago mediante efectivo} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero PF2 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de negocio de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Pago Efectivo - Capa Business}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N006& Pago PSE& Vista& Pagos& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{{Variable - Depende de la configuración de los tipos de pagos disponibles para el producto}} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite al usuario realizar el pago por PSE} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero PF1 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de Vista de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Pago PSE - Capa Vista}
+\label{table:t6}
+\end{longtable}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
+Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
+N006& Pago T. Crédito& Vista& Pagos& -\\[0.5ex] \hline
+Gestión variabilidad componente & \multicolumn{4}{|c|}{{Variable - Depende de la configuración de los tipos de pagos disponibles para el producto}} \\ \hline
+Tipo de componente & \multicolumn{4}{|c|}{Desarrollo Propio} \\ \hline
+Resumen del componente & \multicolumn{4}{|c|}{Permite al usuario realizar el pago por T. Crédito} \\ \hline
+Requisitos que implementa el componente & \multicolumn{4}{|c|}{El requisito con numero PF1 } \\ \hline
+Versión & \multicolumn{4}{|c|}{1.0 } \\ \hline
+Fecha revisión & \multicolumn{4}{|c|}{ 11/12/2020} \\ \hline
+Diseño & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Desarrolladores & \multicolumn{4}{|c|}{Dario Narváez} \\ \hline
+Decisiones técnicas & \multicolumn{4}{|c|}{Este componente estará en la capa de Vista de un estilo arquitectónico de 4 capas  } \\ \hline
+Restricciones & \multicolumn{4}{|c|}{Se requiere previa autenticación y autorización del usuario.} \\ \hline
+Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seguridad} \\ \hline
+\caption{Componente Pago T. Crédito - Capa Vista}
+\label{table:t6}
+\end{longtable}
+
 
 \medskip
 \bibliographystyle{abbrv}
