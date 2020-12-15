@@ -335,7 +335,7 @@ Ingreso Anual $>$ \$4.523.000.000	                &   &  & TallerVirtual3 \\[0.5
 
 \end{tabular}
 \caption{Tabla de Segmentos 1}
-\label{table:t5}
+\label{table:t16}
 \end{table}
 
 ¿Quiénes son los principales actores de la industria?
@@ -864,16 +864,16 @@ Para realizar el diagnóstico y reparar nuestro modelo de variabilidad transform
 %----------------------------------------------------------------------------------------
 %	3 Definición de la arquitectura de referencia del dominio
 %----------------------------------------------------------------------------------------
-\chapter{Definición de la arquitectura de referencia del dominio}
+\section{Definición de la arquitectura de referencia del dominio}
 
-\section{Construir el modelo de variabilidad}
-\subsection{Identificar la variabilidad en los tipos de aplicación}
+\subsection{Construir el modelo de variabilidad}
+\subsubsection{Identificar la variabilidad en los tipos de aplicación}
 La LP de Talleres WEB no requiere características complejas, ni tampoco una interfaz de usuario rica en gráficos. Pero, si requiere independencia del lado del cliente, simplicidad y accesibilidad desde Internet. También, la LP de Talleres WEB podrá a futuro exponer funcionalidades para que puedan ser consumidas por aplicaciones para la reserva de servicios de talleres automovilísticos.\\
 
 Basados en lo anterior la LP de Talleres Web deberá soportar: Aplicaciones Web y Aplicaciones Orientadas a Servicios.
 
 
-\subsection{Identificar la variabilidad en el estilo arquitectónico}
+\subsubsection{Identificar la variabilidad en el estilo arquitectónico}
 Estilos de arquitecrura considerados \cite{url3}
 
 
@@ -900,7 +900,7 @@ Considere el almacenamiento en caché para minimizar los viajes de ida y vuelta 
 
 
 
-\subsection{Identificar la variabilidad en las estrategias de despliegue}
+\subsubsection{Identificar la variabilidad en las estrategias de despliegue}
 
 A continuación, se presenta la variabilidad en las estrategias de despliegues basados en los estilos arquitectónicos planteados anteriormente. 
 
@@ -940,7 +940,7 @@ A continuación, se presenta la variabilidad en las estrategias de despliegues b
 
 Finalmente, se identifica en estos dos estilos arquitectónicos la variación en el despliegue seria en la capa de servicio y si esta capa se implementa toca agregar el componente “Facade o Fachada” en la capa de negocio para implementar comunicación entre estas dos capas y evitar que sean dependientes entre ellas   
 
-\subsection{Identificar la variabilidad en los aspectos técnicos}
+\subsubsection{Identificar la variabilidad en los aspectos técnicos}
 
 \begin{longtable}{|p{2cm}|p{2cm}|p{8cm}|} \hline
 Característica & Tecnologías& Motivación\\[0.5ex] \hline
@@ -955,21 +955,21 @@ Servicios Web & REST& La utilización de REST como interfaz para la comunicació
 \label{table:t6}
 \end{longtable}
 
-\subsection{Modelo de variabilidad de la arquitectura de referencia}
+\subsubsection{Modelo de variabilidad de la arquitectura de referencia}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{model1}\\
 \includegraphics[width=0.8\textwidth]{model2}
 \end{center}
 
-\subsection{referencia resultante arquitectura}
-Teniendo en cuenta el modelo de variabilidad de la arquitectura de referencia y en consecuencia con la necesidad que identificamos en el proyecto decidimos usar una arquitectura orientada a servicios la cual nos permite separar la capa de la vista de la de negocio.
-\subsubsection{Diseño de la Arquitectura de referencia}
+\subsubsection{referencia resultante arquitectura}
+Teniendo en cuenta el modelo de variabilidad de la arquitectura de referencia y en consecuencia con la necesidad que identificamos en el proyecto decidimos usar una arquitectura orientada a servicios la cual nos permite separar la capa de la vista de la de negocio.\\
+\textbf{Diseño de la Arquitectura de referencia}
 \begin{center}
 \includegraphics[width=1\textwidth]{arq3}
 \end{center}
 \vspace{3cm}
 
-\subsubsection{Documentación general del componente }
+\textbf{Documentación general del componente }
 
 \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline
 Identificación & Nombre del componente & Administración de categorías & Identificador del componente & AdCategorías \\[0.5ex] \hline
@@ -1449,12 +1449,104 @@ Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seg
 \label{table:t6}
 \end{longtable}
 
+%----------------------------------------------------------------------------------------
+%	3 Configuración del producto
+%----------------------------------------------------------------------------------------
+\chapter{Espacio de la solución}
+\section{Implementacion del dominio en el BackEnd}
+\subsection{Arquitectura basada en servicios REST en Java}
+
+\begin{enumerate}
+
+\item Estructura de directorios\\
+\begin{center}
+\includegraphics[width=0.4\textwidth]{est1}
+\end{center}
+\begin{itemize}
+	\item \textbf{auth:} contiene la lógica que gestiona la autenticación de los usuarios
+	\item \textbf{controller:} contiene los controladores de la línea de producto es donde se encuentran los servicios 
+	\item \textbf{models:} contiene los modelos de software 
+	\item \textbf{utils:} contiene las utilidades del sistema
+	\item \textbf{view:} contiene la logica de los objetos de transferencia
+	\item \textbf{view/dto:} contiene los objetos de transferencia
+	\item \textbf{view/mapper:} contiene la logia para mapear los DTO's hacia los DAO's y viceversa
+\end{itemize}
+\end{enumerate}
+
+\section{Implementacion del dominio en el FrontEnd}
+\subsection{Arquitectura en Angular 8}
+\begin{enumerate}
+
+\item Estructura de directorios\\
+\begin{center}
+\includegraphics[width=0.4\textwidth]{est2}
+\end{center}
+\begin{itemize}
+	\item \textbf{components:} contiene los componentes de Dominio de la LPS
+	\item \textbf{models:} contiene los DTO's 
+	\item \textbf{pages:} contiene las paginas en lenguaje .HTLM, .css, .ts  
+	\item \textbf{service:} contiene los clientes que consultan al backEnd.
+	\item \textbf{enviroments:} contiene la logica de despliegue en los dierentes entronos
+	\item \textbf{properties:} contiene las propiedades de configuracion de la LPS
+\end{itemize}
+\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 %	4 Configuración del producto
 %----------------------------------------------------------------------------------------
-\chapter{Configuracion de productos}
+\chapter{Gestión de la Configuración y la personalizacion}
 
+\section{Configuración del producto el el BackEnd}
+
+Esta configuración muestra la manera de agregar o quitar componentes del backEnd para obtener un producto en específico.Para efectos prácticos mostraremos como quitar el módulo de pago on line que hace referencia a la Feature Moduilo de pago. Ya que la opcion de Cogro requiere al modulo de pago esta implementado en el modulo de pago de tal manera que si se retira este modulo tambien se retiran los componentes que lo requieren. Esta configuracion hace referencia a los Requisitos Funcionales \textbf{LF\_1}, \textbf{LF\_2}, \textbf{LF\_3}, \textbf{LF\_4}. descrito en este documento en la Tabla~\ref{table:t5}
+
+\subsection{Configuracion de grano Grueso}
+
+\begin{enumerate}
+\item Quitar el controlador.\\
+\begin{center}
+\includegraphics[width=0.38\textwidth]{conBk1}
+\end{center}
+\begin{itemize}
+	\item \textbf{payment:} contiene los Objetos que se manejan para el metodo de pago.
+	\item \textbf{payment/paymentMethod:} contiene el objeto que se usa para realizar el pago el cual puede ser de tres tipos EFE, PSE o TDC.
+	\item \textbf{payment/EFE:} Efectivo.
+	\item \textbf{payment/PSE:} Cuenta corriente. 
+	\item \textbf{payment/TDC:} Tarjeta de credito.
+\end{itemize}
+
+\item Quitar el modelo.\\
+\begin{center}
+\includegraphics[width=0.32\textwidth]{conBk2}
+\end{center}
+\begin{itemize}
+	\item \textbf{payment:} contiene DAO que se manejan para el metodo de pago.
+	\item \textbf{IPaymentDao:} contiene la interfaz que implementa el ORM para hacer la persistencia.
+\end{itemize}
+
+
+\item Quitar el dto.\\
+\begin{center}
+\includegraphics[width=0.32\textwidth]{conBk3}
+\end{center}
+\begin{itemize}
+	\item \textbf{paymentDTO:} contiene DTO que se manejan para el metodo de pago.
+\end{itemize}
+\end{enumerate}
+
+\subsection{Configuracion de grano Fino}
+\begin{enumerate}
+\item Quitar el mapeo.\\
+\begin{center}
+\includegraphics[width=0.38\textwidth]{conBk4}
+\end{center}
+\begin{itemize}
+	\item \textbf{Mapper:} contiene la logica de mapeo de todos los Objetos de la LPS, por tal razon esta clase no se debe eliminar, lo que se hace es editarla como lo veremos en la siguite figuta eliminaremos el codigo correspondite al meto de pagos el cual se enuentra entre las linear 188 y 210 de la clase.
+	\begin{center}
+	\includegraphics[width=0.45\textwidth]{conBk5}
+	\end{center}
+\end{itemize}
+\end{enumerate}
 \section{Requisitos del producto}
 
 
@@ -1565,8 +1657,51 @@ Para la configuracion del la aplicacion para que tome las caracteristicas a impl
 
 \end{enumerate}
 
+%----------------------------------------------------------------------------------------
+%	4 Proceso de derivación
+%----------------------------------------------------------------------------------------
+\chapter{Proceso de derivación}
+Para realizar el proceso de derivación utilizaremos nuestro catálogo de producto propuesto inicialmente el cual se encuentra en el numeral \textbf{1.4.1 Catálogo de Productos}. y la forma propuesta en el numeral \textbf{4.1.} para realizar la configuración de cada producto para efectos prácticos utilizaremos los controladores para demostrar que el catálogo de producto propuesto es configurable dentro de nuestra línea de producto.
 
-
+\begin{enumerate}
+	\item TallerVirtual1: Para obtener esta configuracion se debera dejar como lo muesta la siguente imagen lo que esta en color azul lo de mas se debera borrar del producto.
+	\begin{itemize}
+		\item Inicio de sesión (usuario/ password) \textbf{auth - UserController}
+		\item Carga de servicios por BD \textbf{ServiceController}
+		\item Lista de servicios (nombre, descripción, precio y horarios estáticos) \textbf{ServiceController}
+		\item Reserva de atención (sin pago) \textbf{BookingController}
+		\begin{center}
+		\includegraphics[width=0.38\textwidth]{div1}
+		\end{center}
+	\end{itemize}
+	\item TallerVirtual2: Para obtener esta configuracion No se debe quitar nada del core.
+	\begin{itemize}
+		\item Inicio de sesión (usuario/password, login Google) \textbf{auth - UserController}
+		\item Administración de servicios por Frotend(Excel)
+		\item Administración de horarios por día a la semana por frontend(Excel)
+		\item Lista de servicios (nombre, descripción, imagen, precio y horarios) \textbf{ServiceController - SheduleController}
+		\item Reserva de atención (con pago solo Tarjeta de Crédito) \textbf{BookingController - PaymentController}
+		\item Cancelación de reservación (No permite anular reserva, sino, modificar horario) \textbf{BookingController}
+		\item Se visualiza histórico de servicios solicitados por cliente. \textbf{ServiceController:pendiente de Implementación} 
+		\begin{center}
+		\includegraphics[width=0.38\textwidth]{div2}
+		\end{center}
+	\end{itemize}
+	\item TallerVirtual3: Para obtener esta configuracion No se debe quitar nada del core.
+	\begin{itemize} 
+		\item Inicio de sesión (usuario/password, login Google y FB) \textbf{auth - UserController}
+		\item Administración de servicios por Frontend (Formulario)
+		\item Administración de horarios por día a la semana por Frontend (Formulario)
+		\item Lista de servicios (nombre, descripción, imagen, precio y horarios) \textbf{ServiceController}
+		\item Reserva de atención (con pago con PSE y Tarjeta de Crédito) \textbf{BookingController - PaymentController}
+		\item Cancelación de reservación (Permite anular reserva y modificar horario) \textbf{BookingController}
+		\item Se visualiza histórico de servicios solicitados por cliente (permite descargar en PDF). \textbf{ServiceController:pendiente de Implementación} 
+		\item Tablero de reporte de servicios solicitados según periodo seleccionado. \textbf{ServiceController:pendiente de Implementación} 
+		\begin{center}
+		\includegraphics[width=0.38\textwidth]{div2}
+		\end{center}
+	\end{itemize}
+\end{enumerate}
 
 \medskip
 \bibliographystyle{abbrv}
