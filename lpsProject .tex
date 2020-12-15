@@ -1450,6 +1450,124 @@ Atributos de calidad & \multicolumn{4}{|c|}{Disponibilidad, Mantenibilidad y Seg
 \end{longtable}
 
 
+%----------------------------------------------------------------------------------------
+%	4 Configuración del producto
+%----------------------------------------------------------------------------------------
+\chapter{Configuracion de productos}
+
+\section{Requisitos del producto}
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline	
+
+RF1 & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio del taller si y solo si este esta creado y activo por el administrador} \\ \hline	
+Version     & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline	
+Autores & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Fuente                & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Descripcion         & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio del taller si y solo si este esta creado y activo por el administrador} \\ \hline	
+Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline	
+Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
+\end{longtable}	
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline	
+
+RF2 & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio  del taller en formato de lista, mosaico o galeria si y solo si este esta creado y activo por el administrador} \\ \hline	
+Version     & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline	
+Autores & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Fuente                & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Descripcion         & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio del taller si y solo si este esta creado y activo por el administrador} \\ \hline	
+Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline	
+Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
+\end{longtable}	
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline	
+
+RF3 & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de visualizar los nombre y logo del taller en la cabecera} \\ \hline	
+Version     & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline	
+Autores & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Fuente                & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Descripcion         & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio del taller si y solo si este esta creado y activo por el administrador} \\ \hline	
+Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline	
+Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
+\end{longtable}	
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline	
+
+RF4 & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de visualizar la direccion, telefono  y pagina del taller en la footera} \\ \hline	
+Version     & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline	
+Autores & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Fuente                & \multicolumn{4}{p{12cm}|}{Oscar Calero} \\ \hline	
+Descripcion         & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de consultar información del servicio del taller si y solo si este esta creado y activo por el administrador} \\ \hline	
+Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline	
+Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
+\end{longtable}	
+
+\section{Propuesta del producto basico de la linea producto}
+
+\subsubsection{Modelo de caracteristicas a implementar }
+
+Teniendo encuentra el modelo de caracteristicas de propone implementar el el siguiente para el producto basico de la linea de productos:
+
+\includegraphics[width=0.8\textwidth]{oc_2}
+
+\subsubsection{Arquictectura de software a implementar }
+
+\includegraphics[width=0.8\textwidth]{oc_img3}
+
+\section{Configuracion del Producto}
+
+\subsubsection{Configuracion de la Capa Vista }
+
+\begin{enumerate}
+
+\item Aspectos Tecnicos \\
+\begin{itemize}
+\item Lenguaje: (Typescript)
+\item Framework: (Angular 8.0)
+\item Framework UI  : (Bootstrap)
+\end{itemize}
+
+\item Estructura del Aplicacion en Angular \\
+\begin{itemize}
+\item Components: (Los componentes a utilizar)
+\item Models: (Estructura de datos utilizadas)
+\item Pages  : (Paginas principales del UI)
+\item Services  : (Servicios utilizados para consumir APIs)
+\item App Modulo: (Principal)
+
+
+\end{itemize}
+
+
+\item Configuracion del Aplicacion \\
+Para la configuracion del la aplicacion para que tome las caracteristicas a implementar del modelo de variabilidad propuesta se realizo de la siguiente manera: 
+\begin{itemize}
+\item Constante de configuracion: Se creo una constante en la aplicacion que tendria un objecto con la propiedades variables del producto a generar. Tanto en atributos como en caracteristicas, como se muestra en la siguiente figura:
+
+\includegraphics[width=0.8\textwidth]{oc_4}
+
+\item Implementacion caracterisitca Visualizacion Servicios: Para implementar esta caracterisitca se utilizo el patron de inyeccion de dependencia para inyectas la constante de configuracion y de esta manera activar las caracteristicas de (Lista,Mosaico o galeria). Asi como se muestra en la siguiente figura:
+
+\includegraphics[width=0.8\textwidth]{oc_5}
+
+\includegraphics[width=0.8\textwidth]{oc_6}
+
+\item Implementacion variablidad en atributos: Los atributos con variablidad son el: Nombre del taller, direccion, telefono , pagina web y logo. Para implementar esta variabilidad se utilizo el patron de inyeccion de dependencia para inyectar la constante de configuracion y asi utilizar las variables de estos atributos como se muestra en la siguiente figura:
+
+\includegraphics[width=0.8\textwidth]{oc_7}
+
+\includegraphics[width=0.8\textwidth]{oc_8}
+
+\end{itemize}
+
+\end{enumerate}
+
+
+
+
 \medskip
 \bibliographystyle{abbrv}
 \bibliography{libreria}
