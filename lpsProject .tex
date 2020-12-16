@@ -1617,6 +1617,7 @@ Esta configuración muestra la manera de agregar o quitar componentes del backEn
 
 \section{Configuración del producto el el FrontEnd}
 
+<<<<<<< HEAD
 Esta configuración muestra la manera de agregar o quitar componentes del frontend para obtener un producto en específico. Para demostrar la variablidad se mostrar un archivo de configuracion y como influye ne la variabilidad de grano grueso y grano fino.
 
 \subsection{Configuracion de grano Grueso}
@@ -1631,6 +1632,16 @@ Esta configuración muestra la manera de agregar o quitar componentes del fronte
 
 \item Se creo una constante en la aplicacion que tendria un objecto con la propiedades variables del producto a generar tanto en atributos como en caracteristicas.
 
+=======
+\item Configuración del Aplicación \\
+Para la configuración del la aplicación para que tome las características a implementar del modelo de variabilidad propuesta se realizo de la siguiente manera: 
+\begin{itemize}
+\item Constante de configuración: Se creo una constante en la aplicación que tendría un objecto con la propiedades variables del producto a generar. Tanto en atributos como en características, como se muestra en la siguiente figura:
+
+\includegraphics[width=0.8\textwidth]{oc_4b}
+
+\item Implementación característica Visualización Servicios: Para implementar esta característica se utilizo el patrón de inyección de dependencia para inyectas la constante de configuración y de esta manera activar las características de (Lista,Mosaico o galería). Así como se muestra en la siguiente figura:
+>>>>>>> 82ab9f9d0cbea0158764206cbd58871c27043ea9
 
 \end{itemize}
 
@@ -1645,7 +1656,11 @@ Esta configuración muestra la manera de agregar o quitar componentes del fronte
 \item Para implementar esta caracterisitca se utilizo el patron de inyeccion de dependencia para inyectas la constante de configuracion y de esta manera activar las caracteristicas de (Lista,Mosaico o galeria)
 \end{itemize}
 
+<<<<<<< HEAD
 \end{enumerate}
+=======
+\item Implementación variablidad en atributos: Los atributos con variablidad son el: Nombre del taller, dirección, teléfono , pagina web y logo. Para implementar esta variabilidad se utilizo el patrón de inyección de dependencia para inyectar la constante de configuración y asi utilizar las variables de estos atributos como se muestra en la siguiente figura:
+>>>>>>> 82ab9f9d0cbea0158764206cbd58871c27043ea9
 
 
 
