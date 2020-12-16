@@ -1559,6 +1559,17 @@ Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline
 Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
 \end{longtable}	
 
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} \hline	
+
+RF5 & \multicolumn{4}{p{12cm}|}{El sistema del taller virtual deberá proveer a clientes la habilidad de iniciar sesión mediante usuario/password, Google o Facebook, si y solo si esta activo por el administrador} \\ \hline	
+Version     & \multicolumn{4}{p{12cm}|}{1.0} \\ \hline	
+Autores & \multicolumn{4}{p{12cm}|}{Dario Narváez} \\ \hline	
+Fuente                & \multicolumn{4}{p{12cm}|}{Dario Narváez} \\ \hline	
+Descripcion         & \multicolumn{4}{p{12cm}|}{El sistema debe permitir el inicio de sesión mediante usuario/password, Google o Facebook solo si esta activo por el administrador} \\ \hline	
+Importancia                 & \multicolumn{4}{p{12cm}|}{Alta} \\ \hline	
+Estado        & \multicolumn{4}{p{12cm}|}{Pendiente} \\ \hline	
+\end{longtable}	
+
 
 \section{Configuración del producto el el BackEnd}
 
@@ -1619,31 +1630,46 @@ Esta configuración muestra la manera de agregar o quitar componentes del backEn
 
 Esta configuración muestra la manera de agregar o quitar componentes del frontend para obtener un producto en específico. Para demostrar la variablidad se mostrar un archivo de configuracion y como influye ne la variabilidad de grano grueso y grano fino.
 
-\subsection{Configuracion de grano Grueso}
+\subsection{Configuración de grano Grueso}
 
 \begin{enumerate}
 
 \item Constante de configuracion.\\
 \begin{center}
-\includegraphics[width=0.8\textwidth]{oc_4}
+\includegraphics[width=0.8\textwidth]{oc_4b}
 \end{center}
 \begin{itemize}
 
-\item Se creo una constante en la aplicacion que tendria un objecto con la propiedades variables del producto a generar tanto en atributos como en caracteristicas.
+\item Se creó una constante en la aplicación que tiene un objeto con la propiedades del producto a generar tanto en atributos como en características.
 
 
 \end{itemize}
 
-\item Implementacion caracterisitca Visualizacion Servicios.\\
+\item Implementación caracterísitca Visualización Servicios.\\
 \begin{center}
 \includegraphics[width=0.8\textwidth]{oc_5}
 
 \includegraphics[width=0.8\textwidth]{oc_6}
-\end{center}
-\begin{itemize}
 
-\item Para implementar esta caracterisitca se utilizo el patron de inyeccion de dependencia para inyectas la constante de configuracion y de esta manera activar las caracteristicas de (Lista,Mosaico o galeria)
-\end{itemize}
+\includegraphics[width=0.4\textwidth]{dn_3}
+\end{center}
+
+
+Para implementar esta característica, se utilizó el patrón de inyección de dependencias para incluir la constante de configuración, y de esta manera activar las características deseadas.
+Permitiendo al usuario visualización de servicios: Lista,Mosaico o Galería, según sea el producto.
+
+\item Implementación característica Inicio de Sesión.\\
+\begin{center}
+\includegraphics[width=0.8\textwidth]{dn_1}
+
+\includegraphics[width=0.8\textwidth]{dn_2}
+
+\includegraphics[width=0.8\textwidth]{dn_4}
+\end{center}
+
+
+Para implementar esta característica, se utilizó el patrón de inyección de dependencias para incluir la constante de configuración, y de esta manera activar las características deseadas.
+Permitiendo al usuario el inicio de sesión por diferentes maneras: Usuario/password o Google, según sea el producto.
 
 \end{enumerate}
 
